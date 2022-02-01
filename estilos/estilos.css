@@ -17,7 +17,7 @@ body {
     rgba(234, 146, 247),
     rgba(0, 0, 0)
   );
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
 }
 
 .carusel {
