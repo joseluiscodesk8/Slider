@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0),
+    rgba(234, 146, 247),
+    rgba(0, 0, 0)
+  );
+  background-repeat: no-repeat;
+}
+
+.carusel {
+  width: 100%;
+  margin: 110px auto;
+  /* border: 1px solid; */
+}
+
+h2 {
+  font-size: 1.6rem;
+  line-height: 8rem;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+  text-align: center;
+}
+
+h2,
+h4,
+a {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+/* IMAGENES */
+
+.slide-list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 304px;
+  padding: 10px 0px;
+  margin: 0px auto;
+  max-width: 76vw;
+  overflow: hidden;
+  /* background: rgba(137, 73, 153, 0.5); */
+  box-shadow: 0 2px 15px 2px #000;
+}
+
+.slide-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+  /* border: 1px solid; */
+}
+
+.slide {
+  position: relative;
+  width: 16.2rem;
+  padding: 0 22px;
+  float: left;
+  display: flex;
+  height: 100%;
+  /* border: 1px solid; */
+}
+
+h4 {
+  position: absolute;
+  z-index: 1;
+  font-size: 1.4rem;
+  color: #1416;
+  padding: 15px;
+}
+
+picture img {
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0);
+  padding: 5px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  transition: 0.8s ease-in-out;
+}
+
+/*  BOTONES */
+
+.slide-arrow {
+  border-radius: 30px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 4;
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0);
+  border: 0;
+  cursor: pointer;
+}
+
+.slide-arrow:focus {
+  outline: 0;
+}
+
+.slide-prev {
+  left: 0px;
+}
+
+.slide-next {
+  right: 0px;
+}
