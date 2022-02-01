@@ -154,7 +154,7 @@ a {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   .slide-list {
     max-width: 325px;
   }
